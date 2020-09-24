@@ -26,7 +26,7 @@ Object.keys(localStorage).forEach(function (key) {
    mainDiv.insertAdjacentHTML(position, item);
 });
 /*Function will handle click on un-favorite button*/
-mainDiv.addEventListener("click", () => {
+mainDiv.addEventListener("click", (event) => {
    var heroId = event.target.id;
    event.target.parentNode.parentNode.parentNode.removeChild(
       event.target.parentNode.parentNode
