@@ -64,14 +64,14 @@ var heroCard = function () {
       var favoriteBtn = document.getElementById("favorite-btn");
       favoriteBtn.addEventListener("click", () => {
          var receiveddata = JSON.stringify(heroDetail);
-         alert("Added To Favorite");
+         // alert("Added To Favorite");
          localStorage.setItem(heroDetail.id, receiveddata);
       });
       /*Removing data from local storage*/
       document
          .getElementById("unfavorite-btn")
          .addEventListener("click", () => {
-            alert("Removed From Favorite");
+            // alert("Removed From Favorite");
             localStorage.removeItem(heroDetail.id);
          });
    };
